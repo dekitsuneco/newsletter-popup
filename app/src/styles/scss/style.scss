@@ -86,11 +86,29 @@ h6 {
   font-weight: 400;
 }
 /*--------------------*/
-
+/*100vh / 5 = 20vh
+2✖ = 40h
+2x = 40vh
+x = 20vh*/
 
 .card {
-  &__header {}
-    &__title {}
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    
+    background-color: blue;
+  }
+    &__title {
+      width: 60%;
+
+      overflow-wrap: break-word;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: white;
+    }
 
   &__body {}
     &__description {}
@@ -107,5 +125,6 @@ h6 {
         &__profile-title {}
         &__profile-description {}
 
-    &__review {}
+    &__review {
+    }
 }

@@ -91,27 +91,45 @@ h6 {
 2x = 40vh
 x = 20vh*/
 
+
 .card {
+  max-height: 50rem;
+
+  border: 2px solid red;
   &__header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    max-height:  20rem;
     
     background-color: blue;
+    
   }
     &__title {
-      width: 60%;
+      width: 65%;
+      margin: 3rem auto;
 
       overflow-wrap: break-word;
       text-align: center;
       font-weight: 600;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      line-height: 1.85rem;
       color: white;
     }
 
-  &__body {}
-    &__description {}
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem .5rem;
+
+    max-height: 30rem;
+  }
+    &__description {
+
+    }
 
     &__subscription {}
       &__email-submit {}

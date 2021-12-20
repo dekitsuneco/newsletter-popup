@@ -101,27 +101,39 @@ h6 {
 x = 20vh*/
 
 body {
-  background-image: url('../assets/images/Background.png');
+  background: fixed center / cover url('../assets/images/Background.png');
 }
 
 .card {
-  max-height: 60rem;
+  max-height: 65rem;
   min-width: 320px;
   max-width: 414px;
   margin: 0 auto;
 
   background-color: whitesmoke;
-  border: 2px solid red;
+  box-shadow: .5px .5px 15px gray;
+  border-radius: 15px;
+  overflow: hidden;
+  
+
+  @media (min-width: 412px) {
+    min-height: 34rem;
+    max-width: 440px;
+    margin: 1vh auto;
+  }
 
   &__header {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height:  20rem;
+    max-height: 20rem;
     
     background-color: blue;
     background-image: url('../assets/images/Pattern.png');
     
+    @media (min-width: 412px) {
+      min-height: 13rem;
+    }
   }
     &__title {
       width: 65%;
@@ -133,6 +145,10 @@ body {
       font-weight: 600;
       font-size: 1.5rem;
       line-height: 1.85rem;
+
+      @media (min-width: 412px) {
+        font-size: 1.6rem;
+      }
     }
 
   &__body {
@@ -145,6 +161,12 @@ body {
     padding: 1.2rem .5rem;
 
     font-size: .95rem;
+
+    @media (min-width: 412px) {
+      font-size: .984rem;
+      row-gap: 1.7rem;
+      padding: 1.7rem .5rem;
+    }
   }
     &__description {
       width: 90%;
@@ -170,6 +192,10 @@ body {
           background-color: rgb(240, 234, 234);
           border: .5px solid rgb(118, 118, 118);
           border-radius: 3px;
+
+          @media (min-width: 412px) {
+            padding: .8rem .8rem;
+          }
         }
         &__subscribe-btn {
           padding: .6rem 1.3rem;
@@ -179,6 +205,10 @@ body {
           background-color: blue;
           font-weight: 500;
           border-radius: 3px;
+
+          @media (min-width: 412px) {
+            padding: .8rem 1.3rem;
+          }
         }
       &__label {
         font-size: .85rem;
@@ -188,7 +218,11 @@ body {
     &__profile {
       display: flex;
       column-gap: .3rem;
-      margin: 0 auto;
+      margin: .2rem auto 0 auto;
+
+      @media (min-width: 412px) {
+        margin-top: .6rem;
+      }
     }
       &__avatar {}
       &__profile-info {
@@ -205,5 +239,9 @@ body {
     &__review {
       text-align: center;
       color: rgb(29, 28, 28);
+
+      @media (min-width: 412px) {
+        width: 98%;
+      }
     }
 }

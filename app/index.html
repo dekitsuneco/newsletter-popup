@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles/style.css">
   <title>Document</title>
 </head>
 <body>
@@ -20,24 +21,29 @@
         on how to best create email templates,
         completely free.
       </div>
-      <div class="card__subscription">
+      <form class="card__subscription">
         <div class="card__email-submit">
           <input 
             type="email"
             placeholder="Email Address"
             tabindex="1"
             class="card__input"
+            id="email"
           >
-          <button tabindex="2" class="card__subscribe-btn">
+          <button 
+            type="button" 
+            tabindex="2" 
+            class="card__subscribe-btn"
+          >
             Subscribe
           </button>
         </div>
-        <label for="" class="card__label">
+        <label for="email" class="card__label">
           No spam ever. Unsubscribe anytime.
         </label>
-      </div>
+      </form>
       <div class="card__profile">
-        <img src="" alt="Middle-aged wihte man" class="card__avatar">
+        <img src="./src/assets/images/User Avatar.svg" alt="Middle-aged wihte man" class="card__avatar">
         <div class="card__profile-info">
           <div class="card__profile-title">
             Andrew Vickins

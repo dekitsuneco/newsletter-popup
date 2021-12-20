@@ -165,12 +165,25 @@ x = 20vh*/
         color: gray;
       }
   
-    &__profile {}
+    &__profile {
+      display: flex;
+      column-gap: .3rem;
+      margin: 0 auto;
+    }
       &__avatar {}
-      &__profile-info {}
-        &__profile-title {}
+      &__profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: .2rem;
+      }
+        &__profile-title {
+          font-weight: 700;
+        }
         &__profile-description {}
 
     &__review {
+      text-align: center;
+      color: rgb(29, 28, 28);
     }
 }

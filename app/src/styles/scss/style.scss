@@ -100,11 +100,19 @@ h6 {
 2x = 40vh
 x = 20vh*/
 
+body {
+  background-image: url('../assets/images/Background.png');
+}
 
 .card {
-  max-height: 50rem;
+  max-height: 60rem;
+  min-width: 320px;
+  max-width: 414px;
+  margin: 0 auto;
 
+  background-color: whitesmoke;
   border: 2px solid red;
+
   &__header {
     display: flex;
     justify-content: center;
@@ -119,12 +127,12 @@ x = 20vh*/
       width: 65%;
       margin: 3rem auto;
 
+      color: white;
       overflow-wrap: break-word;
       text-align: center;
       font-weight: 600;
       font-size: 1.5rem;
       line-height: 1.85rem;
-      color: white;
     }
 
   &__body {
@@ -139,16 +147,25 @@ x = 20vh*/
     font-size: .95rem;
   }
     &__description {
+      width: 90%;
+
       text-align: center;
-      
     }
 
-    &__subscription {}
+    &__subscription {
+      width: 95%;
+    }
       &__email-submit {
-        margin-bottom: .7rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: .3rem;
+        margin-bottom: .5rem;
       }
         &__input {
+          margin: .2rem 0;
           padding: .6rem .8rem;
+          flex: 2 1 auto;
 
           background-color: rgb(240, 234, 234);
           border: .5px solid rgb(118, 118, 118);
@@ -156,6 +173,7 @@ x = 20vh*/
         }
         &__subscribe-btn {
           padding: .6rem 1.3rem;
+          flex: 1 1 auto;
 
           color: white;
           background-color: blue;

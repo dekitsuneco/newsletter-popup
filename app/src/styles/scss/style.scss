@@ -105,21 +105,22 @@ body {
 }
 
 .card {
+  min-height: 100vh;
   max-height: 65rem;
   min-width: 320px;
   max-width: 414px;
   margin: 0 auto;
 
   background-color: whitesmoke;
-  box-shadow: .5px .5px 15px gray;
-  border-radius: 15px;
-  overflow: hidden;
-  
 
   @media (min-width: 412px) {
     min-height: 34rem;
     max-width: 440px;
     margin: 1vh auto;
+
+    box-shadow: .5px .5px 15px gray;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   &__header {
@@ -157,12 +158,15 @@ body {
     justify-content: space-around;
     align-items: center;
     row-gap: 1.3rem;
-    max-height: 30rem;
+    min-height: 70vh;
     padding: 1.2rem .5rem;
 
     font-size: .95rem;
 
     @media (min-width: 412px) {
+      min-height: auto;
+      max-height: 30rem;
+
       font-size: .984rem;
       row-gap: 1.7rem;
       padding: 1.7rem .5rem;
@@ -218,7 +222,7 @@ body {
     &__profile {
       display: flex;
       column-gap: .3rem;
-      margin: .2rem auto 0 auto;
+      margin: 2rem auto 0 auto;
 
       @media (min-width: 412px) {
         margin-top: .6rem;

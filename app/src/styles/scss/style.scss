@@ -210,6 +210,15 @@ body {
           font-weight: 500;
           border-radius: 4px;
 
+          &:hover {
+            outline: 1px solid darkblue;
+          }
+          &:active {
+            background-color: white;
+            color: blue;
+            outline: 2px solid darkblue;
+          }
+
           @media (min-width: 412px) {
             padding: .8rem 1.3rem;
           }

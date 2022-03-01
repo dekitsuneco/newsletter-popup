@@ -99,7 +99,19 @@ h6 {
 2x = 40vh
 x = 20vh*/
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100vw;
   background: fixed center/cover url("../assets/images/Background.png");
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
 }
 
 .card {
